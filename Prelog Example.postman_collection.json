@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "33d8ecb6-282e-4864-b46a-af9616583781",
+		"name": "Prelog Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5549113"
+	},
+	"item": [
+		{
+			"name": "Base Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/base-example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"base-example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DI Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/di-example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"di-example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extend Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/extend-example/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"extend-example",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Middleware Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/middleware-example?a=true&num=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"middleware-example"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "true"
+						},
+						{
+							"key": "num",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Schematic Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/schematic-example?num=7&str=string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"schematic-example"
+					],
+					"query": [
+						{
+							"key": "num",
+							"value": "7"
+						},
+						{
+							"key": "str",
+							"value": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/error-example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"error-example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Example 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/examples/error-example2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"examples",
+						"error-example2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
