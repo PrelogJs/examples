@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prelog/framework": "^0.0.47"
+    "@prelog/framework": "latest"
   },
   "devDependencies": {
     "@types/node": "^18.14.6",
