@@ -1,12 +1,13 @@
 import { arc_logger } from "@prelog/framework/@arc";
-import { use_deps_container } from "@prelog/framework/@di";
+import { use_deps_box } from "@prelog/framework/@box";
 import { TSingleController } from "@prelog/framework/@main";
-import { diContainer } from "./services/container";
+import { diBox } from "./services/box";
 
 export const DiController: TSingleController = () => {
-  const { userService } = use_deps_container(diContainer);
-  return function () {
-    arc_logger.debug(JSON.stringify(userService.getUserById(2)));
-    return "di_controller";
+  const { userService } = use_deps_box(diBox);
+  return async function () {
+    const user = await userService.getUserById(2);
+    arc_logger.debug(JSON.stringify(user));
+    return user;
   };
 };
